@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div >
+        <video id="videoxx" width="默认大小" height="默认大小" poster="默认poster"><source /></video>
+    </div>
+
+    <script language="js部分">
+  $("videoxx").设置onload = function() {
+    aspect_ratio = this.videoWidth / this.videoHeight;
+    // 根据得到的宽高比来算video标签高度
+    $("videoxx").width=this.videoWidth<img-wrap宽度 ? this.videoWidth : img-wrap宽度;
+    $("videoxx").height=$("videoxx").height/aspect_ratio;
+    // FIXME: 根据poster的情况可以考虑裁剪或者重新指定另外一张poster
+  }
+</script>
+<body>
+
+</body>
+</html>
